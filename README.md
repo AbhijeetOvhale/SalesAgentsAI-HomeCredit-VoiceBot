@@ -2,8 +2,12 @@
 SalesAgentsAI company's hiring process Assignment
 
 Title: Voice Agent Architecture & State Management Strategy 
+
 Candidate: Abhijeet Ovhale
+
 Role: AI Intern (Prompt Engineer)
+
+
 1. Design Philosophy: State Machine over Decision Tree The primary challenge of this use case is managing non-linear human conversation. Traditional voice bots fail because they rely on rigid, step-by-step decision trees. If a user provides information out of order or multiple data points at once, a standard decision tree forces the AI to repeat questions, creating a frustrating loop.
 To solve this, I designed the System Prompt as a State Machine driven by an internal "Execution Loop."
 2. The Execution Loop Architecture Instead of giving the LLM a script to read, the prompt forces the AI to execute a silent backend algorithm before generating every spoken response:
